@@ -1,0 +1,155 @@
+# ⚡ LIFE-OS
+
+> AI-Powered Digital Wellbeing Command Center
+
+```text
+┌─────────────────────────────────────────────┐
+│ LIFE-OS                                     │
+│ STATUS: ONLINE                              │
+│                                             │
+│ Track. Analyze. Reclaim your time.          │
+└─────────────────────────────────────────────┘
+```
+
+## 🧠 About
+
+**Life-OS** is an AI-powered digital wellbeing dashboard built with Streamlit and Google Gemini.
+
+It analyzes screen-time behavior and transforms raw usage data into actionable lifestyle recommendations.
+
+Instead of simply telling users to "use their phone less", Life-OS identifies major digital distractions and recommends real-world alternatives such as exercise, reading, cooking, outdoor activities, journaling, and focused work.
+
+## ✨ Features
+
+- 📊 14-day screen-time analytics
+- 📱 App and category usage tracking
+- 🎯 Custom daily screen-time goals
+- 📈 Interactive screen-time trend visualization
+- 🧮 Real-time KPI dashboard
+- 🧠 Gemini-powered AI Life Coach
+- ⚠️ Screen-time severity detection
+- 🏃 Real-world activity recommendations
+- 🔗 Shareable Accountability Links
+- 🌙 Professional SaaS-style dark interface
+
+## 🤖 AI Life Coach
+
+Life-OS summarizes daily screen-time data and sends the aggregated information to Gemini.
+
+The AI evaluates:
+
+- Productive vs distracting screen time
+- Biggest digital time leaks
+- Goal performance
+- Opportunities to reclaim time
+- Physical and real-world replacement activities
+- A practical challenge for the next day
+
+## 🔗 Accountability Mode
+
+Life-OS uses Streamlit's `st.query_params` to encode the selected date and screen-time statistics into the URL.
+
+This allows users to share their screen-time results with an accountability partner.
+
+## 🛠️ Tech Stack
+
+```text
+Frontend / Dashboard  → Streamlit
+Data Processing       → Pandas
+AI                    → Google Gemini
+Gemini SDK            → google-genai
+Dataset               → CSV
+Configuration         → python-dotenv
+```
+
+## 📂 Project Structure
+
+```text
+Life-OS-Wellbeing-Dashboard/
+│
+├── app.py
+├── screentime.csv
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .env              # Not uploaded to GitHub
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd Life-OS-Wellbeing-Dashboard
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file:
+
+```text
+GEMINI_API_KEY=your_api_key_here
+```
+
+Run Life-OS:
+
+```bash
+streamlit run app.py
+```
+
+## 🔐 Security
+
+API credentials are never committed to the repository.
+
+Local development uses `.env`, while deployed environments use Streamlit Secrets.
+
+## 📊 Dataset
+
+The project uses a synthetic 14-day digital wellbeing dataset containing:
+
+```text
+Date
+App_Name
+Category
+Minutes_Used
+```
+
+This simulates real-world screen-time information without requiring access to restricted device wellbeing APIs.
+
+## 🚀 Deployment
+
+The application can be deployed using Streamlit Community Cloud.
+
+The Gemini API key must be configured through Streamlit Secrets:
+
+```toml
+GEMINI_API_KEY = "your_api_key_here"
+```
+
+## 🎓 Project
+
+Built as part of:
+
+**MirAI School of Technology — Virtual Summer Internship 2026**
+
+**AI Builder Track**
+
+Capstone Assignment: **The "Life-OS" Wellbeing Dashboard**
+
+---
+
+```text
+SYSTEM STATUS
+─────────────
+DATA PIPELINE      [ONLINE]
+DASHBOARD          [ONLINE]
+GEMINI AI          [ONLINE]
+ACCOUNTABILITY     [ONLINE]
+```
+
+⚡ **LIFE-OS — Reclaim your time.**
