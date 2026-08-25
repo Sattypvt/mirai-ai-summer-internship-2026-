@@ -86,8 +86,9 @@ Provides actionable recommendations to improve the resume for the selected posit
 
 Generates a downloadable PDF report containing the resume analysis and feedback.
 
-🧠 System Architecture
-🔄 Application Data Flow
+# 🧠 System Architecture
+
+```text
                     ┌──────────────┐
                     │     USER     │
                     └──────┬───────┘
@@ -136,6 +137,7 @@ Generates a downloadable PDF report containing the resume analysis and feedback.
                              ▼
                       ┌─────────────┐
                       │ PDF Report  │
+                      └─────────────┘
                       └─────────────┘
 🧠 AI & Prompt Engineering
 
