@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+.env
+__pycache__/
+=======
+.env
+__pycache__/
+>>>>>>> b52a65518d13e03068ab911a38f2df2e7493559f
+*.pyc
